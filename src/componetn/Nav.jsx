@@ -64,7 +64,7 @@ function Nav() {
           )}
         </div>
         <div
-          className={`lg:flex fixed lg:static top-12 right-0 w-full lg:w-auto bg-gradient-to-r from-cyan-500 to-cyan-600 text-white transition-transform duration-300 ease-in-out lg:bg-transparent lg:translate-x-0 ${
+          className={`lg:flex fixed lg:static top-12 right-0 w-full lg:w-auto bg-gradient-to-r from-cyan-500 to-blue-600 text-white transition-transform duration-300 ease-in-out lg:bg-transparent lg:translate-x-0 ${
             isOpen ? "translate-x-0" : "translate-x-[-100%]"
           }`}
         >

@@ -123,36 +123,28 @@ function Weather() {
 
         <div className="bg-white rounded-2xl shadow-xl p-6 mb-6">
           <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Latitude
-                </label>
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-5 w-full">
                 <input
                   type="number"
                   step="any"
-                  placeholder="e.g., 24.71"
+                  placeholder="Latitude (e.g., 23.45)"
                   value={coordinates.lat}
                   onChange={(e) =>
                     setCoordinates({ ...coordinates, lat: e.target.value })
                   }
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full md:w-1/2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
-              </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Longitude
-                </label>
                 <input
                   type="number"
                   step="any"
-                  placeholder="e.g., 46.68"
+                  placeholder="Longitude (e.g., 46.68)"
                   value={coordinates.lon}
                   onChange={(e) =>
                     setCoordinates({ ...coordinates, lon: e.target.value })
                   }
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full md:w-1/2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
             </div>
